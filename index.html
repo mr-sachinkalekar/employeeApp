@@ -1,0 +1,21 @@
+<html ng-app="employeeApp">
+<head>
+    <meta charset="utf-8">
+    <title>Angular.js Example</title>
+    <link rel="stylesheet" href="css/myStyle.css"/>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular-route.min.js"></script>
+
+    <script src="angular/employeeControllers.js"></script>
+    <script src="angular/employeesFactory.js"></script>
+    <script src="angular/employeeDirective.js"></script>
+    <script src="angular/app.js"></script>
+</head>
+<body>
+<div id="header" ng-include="'staticTemplates/header.html'"></div>
+<div id="nav" ng-include="'staticTemplates/navigation.html'"></div>
+<div id="section" ng-view></div>
+<div id="footer" ng-include="'staticTemplates/footer.html'"></div>
+</body>
+</html>

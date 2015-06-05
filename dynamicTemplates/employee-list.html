@@ -1,0 +1,7 @@
+<h3>This is an AngularJS Application</h3>
+<h4>Fallowing is a list populated using ng-repeat and dynamically loaded</h4>
+
+<ul id="employeelist">
+    <li ng-repeat="employee in employees | filter:search" employee="employee">
+    </li>
+</ul>
